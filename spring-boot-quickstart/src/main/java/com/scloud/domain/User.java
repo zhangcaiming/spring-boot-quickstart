@@ -22,9 +22,14 @@ public class User implements Serializable {
     private Long id;
 
     /**
-     * 名称
+     * 用户名
      */
     private String name;
+
+    /**
+     * 密码
+     */
+    private String password;
 
     /**
      * 年龄
@@ -42,6 +47,7 @@ public class User implements Serializable {
         return "User{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
+                ", password='" + password + '\'' +
                 ", age=" + age +
                 ", birthday=" + birthday +
                 '}';
