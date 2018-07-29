@@ -4,6 +4,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.web.servlet.MultipartConfigFactory;
 import org.springframework.context.annotation.Bean;
+import org.springframework.data.elasticsearch.repository.config.EnableElasticsearchRepositories;
 import org.springframework.scheduling.annotation.EnableScheduling;
 
 import javax.servlet.MultipartConfigElement;
@@ -11,6 +12,7 @@ import javax.servlet.MultipartConfigElement;
 
 @SpringBootApplication
 @EnableScheduling
+@EnableElasticsearchRepositories(basePackages = "com.scloud.repository.es")
 public class QuickstartApplication {
 
 	public static void main(String[] args) {
