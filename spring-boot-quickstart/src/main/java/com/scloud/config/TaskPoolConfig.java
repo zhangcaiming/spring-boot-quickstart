@@ -56,7 +56,6 @@ public class TaskPoolConfig implements AsyncConfigurer {
                 log.info("Parameter value - " + param);
             }
         }
-
     }
 
 }
