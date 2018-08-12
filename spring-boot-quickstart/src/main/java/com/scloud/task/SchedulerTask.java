@@ -1,15 +1,19 @@
 package com.scloud.task;
 
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.scheduling.annotation.Async;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.Random;
 
 /**
  * Create by andy on 2018/5/14
  * 定时任务 在{@link com.scloud.QuickstartApplication}中启用定时任务@EnableScheduling
  */
+@Slf4j
 @Component
 public class SchedulerTask {
 
@@ -31,7 +35,6 @@ public class SchedulerTask {
     private void reportCurrentTime() {
         System.out.println("现在时间：" + dateFormat.format(new Date()));
     }
-
 
 
 }
