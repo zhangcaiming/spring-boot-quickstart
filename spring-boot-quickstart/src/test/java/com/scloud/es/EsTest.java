@@ -1,19 +1,16 @@
 package com.scloud.es;
 
+import com.scloud.CommonTest;
 import com.scloud.domain.Book;
 import com.scloud.repository.es.BookRepository;
 import lombok.extern.slf4j.Slf4j;
 import org.elasticsearch.index.query.QueryBuilder;
 import org.elasticsearch.index.query.QueryBuilders;
 import org.junit.Test;
-import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.context.SpringBootTest;
-
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
-import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.util.CollectionUtils;
 
 import java.util.Arrays;
@@ -24,9 +21,7 @@ import java.util.UUID;
  * Create by andy on 2018/7/30
  */
 @Slf4j
-@RunWith(SpringRunner.class)
-@SpringBootTest
-public class EsTest {
+public class EsTest extends CommonTest {
 
     @Autowired
     private BookRepository bookRepository;
