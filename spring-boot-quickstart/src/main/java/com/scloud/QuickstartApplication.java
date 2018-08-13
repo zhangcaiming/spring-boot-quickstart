@@ -17,8 +17,10 @@ import javax.servlet.MultipartConfigElement;
 public class QuickstartApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(QuickstartApplication.class, args);
-	}
+        System.out.println("项目启动中...");
+        SpringApplication.run(QuickstartApplication.class, args);
+        System.out.println("项目启动完成!");
+    }
 
     /**
      * 配置文件上传设置
