@@ -1,12 +1,12 @@
 package com.scloud.rabbitmq;
 
-import com.scloud.CommonTest;
+import com.scloud.AbstractCommonJunitTest;
 import com.scloud.rabbit.topic.TopicSender;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
 
-public class TopicTest extends CommonTest{
+public class TopicTest extends AbstractCommonJunitTest {
 
     @Autowired
     private TopicSender sender;

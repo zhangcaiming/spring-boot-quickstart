@@ -1,12 +1,12 @@
 package com.scloud.async;
 
-import com.scloud.CommonTest;
+import com.scloud.AbstractCommonJunitTest;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.concurrent.Future;
 
-public class TaskTest extends CommonTest {
+public class TaskTest extends AbstractCommonJunitTest {
 
     @Autowired
     private Task task;

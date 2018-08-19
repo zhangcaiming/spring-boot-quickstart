@@ -1,6 +1,6 @@
 package com.scloud.statemachine;
 
-import com.scloud.CommonTest;
+import com.scloud.AbstractCommonJunitTest;
 import com.scloud.stateMachine.enums.OrderEventsEnum;
 import com.scloud.stateMachine.enums.OrderStatusEnum;
 import org.junit.Test;
@@ -11,7 +11,7 @@ import org.springframework.statemachine.StateMachine;
  * @author andy
  * @create 2018/8/13 22:56
  **/
-public class StateMachineTest extends CommonTest{
+public class StateMachineTest extends AbstractCommonJunitTest {
 
     @Autowired
     private StateMachine<OrderStatusEnum,OrderEventsEnum> stateMachine;

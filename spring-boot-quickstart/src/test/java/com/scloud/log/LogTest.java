@@ -1,6 +1,6 @@
 package com.scloud.log;
 
-import com.scloud.CommonTest;
+import com.scloud.AbstractCommonJunitTest;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 
@@ -8,7 +8,7 @@ import org.junit.Test;
  * Create by andy on 2018/5/13
  */
 @Slf4j
-public class LogTest extends CommonTest {
+public class LogTest extends AbstractCommonJunitTest {
 
     @Test
     public void test() {

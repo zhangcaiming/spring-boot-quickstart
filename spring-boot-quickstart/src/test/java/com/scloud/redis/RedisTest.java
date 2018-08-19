@@ -1,6 +1,6 @@
 package com.scloud.redis;
 
-import com.scloud.CommonTest;
+import com.scloud.AbstractCommonJunitTest;
 import com.scloud.domain.User;
 import org.junit.Assert;
 import org.junit.Test;
@@ -13,7 +13,7 @@ import javax.annotation.Resource;
 
 
 
-public class RedisTest extends CommonTest{
+public class RedisTest extends AbstractCommonJunitTest {
 
     @Autowired
     private RedisTemplate redisTemplate;

@@ -1,6 +1,6 @@
 package com.scloud.service;
 
-import com.scloud.CommonTest;
+import com.scloud.AbstractCommonJunitTest;
 import com.scloud.email.MailService;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -9,7 +9,7 @@ import org.thymeleaf.context.Context;
 
 
 
-public class MailServiceTest extends CommonTest{
+public class MailServiceTest extends AbstractCommonJunitTest {
 
     @Autowired
     private MailService mailService;

@@ -1,6 +1,6 @@
 package com.scloud.es;
 
-import com.scloud.CommonTest;
+import com.scloud.AbstractCommonJunitTest;
 import com.scloud.domain.Book;
 import com.scloud.repository.es.BookRepository;
 import lombok.extern.slf4j.Slf4j;
@@ -21,7 +21,7 @@ import java.util.UUID;
  * Create by andy on 2018/7/30
  */
 @Slf4j
-public class EsTest extends CommonTest {
+public class EsTest extends AbstractCommonJunitTest {
 
     @Autowired
     private BookRepository bookRepository;

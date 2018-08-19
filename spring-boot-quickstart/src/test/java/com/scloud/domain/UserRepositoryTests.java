@@ -1,7 +1,7 @@
 package com.scloud.domain;
 
 
-import com.scloud.CommonTest;
+import com.scloud.AbstractCommonJunitTest;
 import com.scloud.repository.UserRepository;
 import org.junit.Assert;
 import org.junit.Test;
@@ -9,7 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.Date;
 
-public class UserRepositoryTests extends CommonTest {
+public class UserRepositoryTests extends AbstractCommonJunitTest {
 
 
     @Autowired

@@ -1,12 +1,12 @@
 package com.scloud.rabbitmq;
 
-import com.scloud.CommonTest;
+import com.scloud.AbstractCommonJunitTest;
 import com.scloud.rabbit.fanout.FanoutSender;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
 
-public class FanoutTest extends CommonTest{
+public class FanoutTest extends AbstractCommonJunitTest {
 
     @Autowired
     private FanoutSender sender;
